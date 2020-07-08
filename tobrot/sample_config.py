@@ -35,4 +35,3 @@ class Config(object):
     TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
     # URL for the rclone configuration
     R_CLONE_CONF_URI = os.environ.get("R_CLONE_CONF_URI", None)
-
