@@ -98,13 +98,13 @@ if __name__ == "__main__" :
     #
     rename_message_handler = MessageHandler(
         rename_message_f,
-        filters=Filters.command(["rename@Desi_mms_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["rename"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(rename_message_handler)
     #
     upload_document_handler = MessageHandler(
         upload_document_f,
-        filters=Filters.command(["upload@Desi_mms_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["upload"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(upload_document_handler)
 
@@ -133,13 +133,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["savethumbnail@Desi_mms_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["savethumbnail"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command(["clearthumbnail@Desi_mms_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["clearthumbnail"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     # 
